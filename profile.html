@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="icon" href="Photo/Portofolio/speaking.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .h1-skill{margin-top: 17px;}
+        .hero{
+            position: absolute;
+            animation: profiL 1.5s;
+        }
+
+        @keyframes profiL{
+            from{left: 800px;}
+            to{left: 0;}
+        }
+
+        .konten{
+            animation: texT 1.5s;
+        }
+
+        @keyframes texT{
+            from{left: -400px;}
+            to{left: 200px;}
+        }
+
+        .underline{
+            position: relative;
+            animation: gariS 1.5s;
+        }
+
+        @keyframes gariS{
+            from{top: -200px;}
+            to{top: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!--PROFIL-->
+        <div class="underline">
+            <h1 class="h1-skill">PROFIL</h1>
+            <div class="baris"></div>
+        </div>
+        <div class="profile">
+            <div class="hero">
+                <div class="image">
+                    <img src="Photo/Portofolio/daffa.jpg">
+                    <span>Daffa</span>
+                </div>
+            </div>
+            <div class="konten">
+                <h2 class="p-1">Hello World, i'm</h2>
+                <div class="text-shadow">
+                    <h2 class="p-2">Aqyla Daffa</h2>
+                </div>
+                    <h2 class="p-3">Smkn 1 Bukittinggi</h2>
+                    <h2 class="p-4">Welcome to My personal website</h2>
+            </div>
+        </div>
+
+</body>
+</html>

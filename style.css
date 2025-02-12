@@ -1,0 +1,640 @@
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    cursor: context-menu;
+}
+
+.pangkal {
+    opacity: 0;
+}
+
+.header .nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    z-index: 999;
+    box-shadow: 0 3px 6px rgb(203, 210, 6, .5);
+}
+
+.up-button{
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .5);
+    width: 80px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    bottom: 30px;
+    left: 40px;
+    z-index: 99999;
+}
+
+.up-button:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.arrow-up-button{
+    border-top: 5px solid rgb(255, 255, 255);
+    border-left: 5px solid white;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 30px;
+    left: 28px;
+    transform: rotate(45deg);
+    z-index: 999999999999999999999;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.header .nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.header .nav ul li:hover{
+    background-color: #5b5252;
+    background-size: contain;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font: 12px/30px arial;
+    color: white;
+}
+
+.content h1{
+    font: 25px/40px arial;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+ /*Profil*/
+.profile{
+    background-color: rgb(0, 0, 0);
+    width: 1060px;
+    height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.profile img{
+    position: absolute;
+    top: 140px;
+    left: 550px;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 2px solid rgb(212, 227, 12);
+    box-shadow: 0 0 30px 10px rgb(193, 234, 12, .5);
+}
+
+.profile span{
+    font-family: arial;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 152px;
+    left: 552px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    text-align: center;
+    line-height: 140px;
+    color: rgba(31, 7, 87, 0.75);
+    text-shadow: 1px 1px 2px #ddd;
+    transition: .3s;
+}
+
+.image:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+.konten{
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 170px;
+    left: 200px;
+}
+
+.p-1, .p-2, .p-3, .p-4{
+    margin-bottom: 10px;
+}
+.p-1{
+    font-size: 15px;
+    color: yellow;
+}
+.p-2{
+    font-size: 40px;
+    color: white;
+}
+.p-3{
+    font-size: 20px;
+    color: rgb(167, 218, 15);
+}
+.p-4{
+    font-size: 15px;
+    color: white;
+}
+
+/*Bio*/
+.bio{
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 150px;
+    box-shadow: 3px 3px 5px 1px rgba(238, 238, 20, 0.981);
+}
+
+.soal p,
+.jawaban p{
+    font: 19px arial;
+    position: absolute;
+    margin-top: 50px;
+}
+.soal p{
+    font-weight: bold;
+}
+
+.p1,.p01{
+    top: 40px;
+}
+.p2,.p02{
+    top: 65px;
+}
+.p3,.p03{
+    top: 90px;
+}
+.p4,.p04{
+    top: 115px;
+}
+.p5,.p05{
+    top: 140px;
+}
+.p6,.p06{
+    top: 165px;
+}
+.p7,.p07{
+    top: 190px;
+}
+.p8,.p08{
+    top: 215px;
+}
+.p9,.p09{
+    top: 240px;
+}
+.p10,.p010{
+    top: 265px;
+}
+.p11,.p011{
+    top: 290px;
+}
+
+.p1,.p2,.p3,.p4,.p5,.p6,.p7,.p8,.p9,.p10,.p11{
+    left: 10%;
+}
+
+.p01,.p02,.p03,.p04,.p05,.p06,.p07,.p08,.p09,.p010,.p011{
+    left: 25%;
+}
+
+.experience p{
+    font: bold 20px/18px ;
+    color: white;
+}
+
+/*PENGALAMAN*/
+.experience{
+    background-color: rgb(255, 255, 255);
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 150px;
+    box-shadow: 3px 3px 5px 1px rgba(238, 238, 20, 0.981);
+}
+
+.experience .exp-isi{
+    color: black;
+    position: absolute;
+    top: 20px;
+    left: 320px;
+}
+.experience .hero{
+    width: 300px;
+    height: 500px;
+    background-image: url(Photo/Portofolio/kominfo.jpg);
+    background-position: -330px -35px;
+    background-repeat: no-repeat;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+/*SKILL*/
+.underline .h1-skill{
+    margin-bottom: 15px;
+    font: 25px/40px arial;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.underline .baris{
+    width: 70px;
+    height: 5px;
+    background-color: yellow;
+    border-radius: 5px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 640px;
+    animation: move 2s infinite;
+}
+
+
+.skill{
+    background-color: rgb(0, 0, 0);
+    width: 1037px;
+    height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 150px;
+    margin-left: 160px; 
+}
+
+.skill p, .skill2 p{
+    position: absolute;
+    left: 70px;
+    font: 15px/80px sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.skill span, .skill2 span{
+    font: 15px arial;
+}
+
+/*1*/
+.html,.css,.js,
+.tailwind,.exceel,.editor,
+.webdev{
+    background-color: rgb(0, 0, 0);
+    width: 240px;
+    height: 80px;
+    transition: 1s;
+    float: left;
+    position: relative;
+    margin-right: 20px;
+    border: 2px solid rgb(181, 199, 20, .5);
+    margin-bottom: 20px;
+}
+
+
+.html-img,.css-img,.js-img,.pspeak-img,.exceel-img,
+.alight-motion-img,.mikrotik-img,.webdev-img{
+    border-radius: 15px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 40px;
+}
+
+.skill span{
+    position: absolute;
+    left: 70px;
+    top: 50px;
+    font: 12px arial;
+    opacity: 1;
+    transition: .2s;
+}
+
+.html:hover span,.css:hover span,.js:hover span,.pspeak:hover span,
+.tailwind:hover span,.exceel:hover span,.editor:hover span,.mikrotik:hover span,
+.webdev:hover span{
+    opacity: 1;
+    color: rgb(255, 255, 255, .5);
+}
+/*JS*/
+.skill .js-img{
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 40px;
+}
+
+/*Setiap No Ke 4*/
+.skill .pspeak,.skill .mikrotik{
+    background-color: rgb(0, 0, 0);
+    width: 240px;
+    height: 80px;
+    transition: 1s;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid rgb(181, 199, 20, .5);
+    margin-bottom: 20px;
+}
+
+
+/*Tailwind*/
+.tailwind-css-img{
+    border-radius: 15px;
+    position: absolute;
+    top: 25px;
+    left: 10px;
+    width: 40px;
+    height: 30px;
+}
+
+/*PROJEK*/
+.project{
+    background-color: rgb(0, 0, 0);
+    width: 900px;
+    height: 800px;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 150px;
+    margin-left: 225px;
+}
+
+.project div{
+    background-color: #000000;
+    width: 350px;
+    height: 350px;
+    float: left;
+    margin-left: 65px;
+    margin-bottom: 50px;
+}
+
+.project img{
+    width: 350px;
+    height: 350px;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px 1px rgb(212, 230, 16);
+}
+
+.project div a{
+    color: black;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: #5b5252;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 740px;
+}
+
+.footer .p1-footer{
+    text-align: center;
+    font: 300 18px/30px sans-serif;
+    color: white;
+}
+
+.bag1,.bag2,.bag3{
+    width: 120px;
+    height: 40px;
+    border: 2px solid #5b5252;
+    position: relative;
+    left: 500px;
+    top: 5px;
+    float: left;
+}
+
+.bag1 a,.bag2 a,.bag3 a{
+    font: 12px  sans-serif;
+    text-decoration: none;
+    color: #ddd;
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.kontak img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 25%;
+}
+
+.mobil-animasi{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: -31px;
+    left: 0;
+    z-index: 9999;
+    animation: MobilJalan 11s infinite ease-in-out;
+}
+
+/*GALERI*/
+.container {
+    width: 600px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 0 3px 3px rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    margin-bottom: 200px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    /*overflow: hidden;*/
+    border: 5px solid #e6e935;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+
+.gallery li,
+.gallery li a img,
+.gallery span {
+    border-radius: 50%;
+}
+
+.gallery li span{
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 120px;
+    color: rgba(31, 7, 87, 0.75);
+    text-shadow: 1px 1px 2px #ddd;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: .3s;
+}
+
+.gallery li a:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+
+/*Overlay*/
+
+.overlay {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: 999;
+    transition: .8s;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+}
+
+.overlay img {
+    max-height: 100%;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img{
+    animation: fade 1s;
+}
+
+.overlay .close {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -20px;
+    color: antiquewhite;
+    text-decoration: none;
+    background-color: salmon;
+    border: 1px solid white;
+    line-height: 14px;
+    padding: 5px 15px;
+    opacity: 0;
+}
+
+.overlay .close{
+    animation: slideDown .5s .5s forwards;
+}
+
+.overlay:target .next,
+.overlay:target .prev{
+    animation: fade .5s .5s forwards;
+}
+
+
+/*Navigasi*/
+.next, .prev {
+    width: 64px;
+    height: 64px;
+    background-image: url(arah.png);
+    box-shadow: inset -5px -5px 0 5px white;
+    position: absolute;
+    text-indent: -9999px;
+    top: 40%;
+    margin-left: 50px;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+
+.prev {
+    background-image: url(arah.png);
+    transform: rotate(135deg);
+    margin-left: -100px;
+}
+iframe{
+    position: absolute;
+    transition: 1.5s;
+}
+
+
+.containBox{
+    width: 100%;
+    height: 660px;
+}
+/*Animasi*/
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown{
+    0% {
+        opacity: 0;
+        margin-top: -20px;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
+}
+
+@keyframes move{
+    0%{left: 630px;}
+    50%{left: 650px;}
+    100%{left: 630px;}
+}
+
+@keyframes MobilJalan {
+    0%{left: 0;}
+    50%{left: 1275px;transform: scaleX(1);}
+    51%{transform: scaleX(-1)}
+    100%{left: 0;transform: scaleX(-1);}
+}
